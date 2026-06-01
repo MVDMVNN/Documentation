@@ -1,0 +1,18 @@
+site_name: Моя документация
+theme:
+  name: material
+  palette:
+    scheme: slate # тёмная тема по умолчанию
+    primary: indigo
+    accent: cyan
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Главная: index.md
+  - Серверные сетапы:
+      - Hostinger + Palladium: server/Hostinger+Palladium.md
+      - Прокидываем в клауд домены: server/CloudScript.md
