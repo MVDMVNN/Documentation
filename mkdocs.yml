@@ -1,6 +1,9 @@
 site_name: Моя документация
 theme:
   name: material
+  font:
+    text: JetBrains Mono
+    code: JetBrains Mono
   palette:
     scheme: slate # тёмная тема по умолчанию
     primary: indigo
@@ -11,8 +14,27 @@ theme:
     - search.highlight
     - content.code.copy
 
+extra_css:
+  - css/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 nav:
   - Главная: index.md
+  - Keitaro:
+      - Создание стандартного сетапа в кейтаро (Crypto): keitaro/standard-setup-crypto.md
+      - Отключение ключа кампании: keitaro/disable-campaign-key.md
+      - Создание оффера NCAPI: keitaro/offer-ncapi.md
+      - Адаптация оффера под Google: keitaro/offer-google.md
+      - Postback — отправка лида: keitaro/postback-lead.md
+      - Сетап в кейтаро без кло: keitaro/setup-no-clo.md
+      - Создание сетапа под facebookEK (conversionApi): keitaro/setup-facebookek.md
+      - Preland — скрипт для выделения всех ссылок и перехода на оффер: keitaro/preland-script.md
   - Серверные сетапы:
       - Hostinger + Palladium: server/Hostinger+Palladium.md
       - Прокидываем в клауд домены: server/CloudScript.md
