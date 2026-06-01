@@ -1,13 +1,11 @@
 # Адаптация оффера под Google
 
-## Процесс
-
-1. Скачиваем нужный оффер под Facebook
+### 1. Скачиваем нужный оффер под Facebook
 
 !!! warning "Важно"
-    Скачивать нужно обычный `[fb]` оффер, **не** `[conversion]`
+Скачивать нужно обычный `[fb]` оффер, **не** `[conversion]`
 
-2. Открываем код и меняем страницу спасибо **thanks/index.php**
+### 2. Открываем код и меняем страницу спасибо **thanks/index.php**
 
 В теге `<head>` вместо подключения `pixelInitLead.js` вставляем этот скрипт:
 
@@ -52,7 +50,7 @@
 </head>
 ```
 
-3. В файле **js/script.js** меняем в двух местах:
+### 3. В файле **js/script.js** меняем в двух местах:
 
 **а) Константы оффера** (почти в начале скрипта):
 
@@ -68,8 +66,8 @@ const offerLang = "ru";
 
 ```js
 // Было:
-if (response.saved === 'true') {
-  const redirectUrl = response.redirect_url || 'none';
+if (response.saved === "true") {
+  const redirectUrl = response.redirect_url || "none";
   window.location.href = `thanks/?redirectUrl=${redirectUrl}`;
   return;
 }
