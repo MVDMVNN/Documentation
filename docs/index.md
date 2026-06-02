@@ -10,15 +10,9 @@
 git clone git@github.com:LDocsSite/Documentation.git // Клонируем репу к себе на пк
 cd Documentation // Переходим в папку с репозиторием
 pip3 install mkdocs-material // Установка самого MkDocs
-mkdocs serve // Запуск локально
+python3 -m mkdocs gh-deploy --force // Запуск локально
 
-mkdocs gh-deploy --force //Пуш в репозиторий с автоматическим билдом
-```
-
-!!! tip "Если ошибка при mkdocs serve"
-
-```bash
-python3 -m mkdocs serve
+python3 -m mkdocs gh-deploy --force //Пуш в репозиторий с автоматическим билдом
 ```
 
 ## Важные заметки
