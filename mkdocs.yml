@@ -61,6 +61,8 @@ nav:
           - Adding Domains: aio/domains/adding-domains.md
           - Domain Proxying: aio/domains/domain-proxying.md
           - Domain Recovery: aio/domains/domain-recovery.md
+      - Servers:
+          - Servers Buying and Setup: aio/servers/servers.md
       - Landing:
           - Overview: aio/landing/index.md
           - Adding new land: aio/landing/new-land.md
