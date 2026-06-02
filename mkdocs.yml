@@ -62,12 +62,12 @@ nav:
           - Domain Proxying: aio/domains/domain-proxying.md
           - Domain Recovery: aio/domains/domain-recovery.md
       - Servers:
-          - Servers Buying and Setup: aio/servers/servers.md
+          - Servers Purchase and Configuration: aio/servers/servers.md
       - Landing:
           - Overview: aio/landing/index.md
-          - Adding new land: aio/landing/new-land.md
-          - New land creation: aio/landing/create.md
-          - Transfer land from Keitaro: aio/landing/migrate.md
+          - Adding New land: aio/landing/new-land.md
+          - New Land Creation: aio/landing/create.md
+          - Transfer Land from Keitaro: aio/landing/migrate.md
       - Access: aio/access.md
       - Fix Template: aio/fix-template.md
       - WE DON'T USE IT NOW:
