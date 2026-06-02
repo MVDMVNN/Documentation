@@ -1,44 +1,44 @@
-# Destinations(Offers)
+# destinationsoffers
 
 ## Находятся в Tracker —> Destinations
 
-![Screenshot 2025-11-28 at 11.17.14.png](Destinations(Offers)/Screenshot_2025-11-28_at_11.17.14.png)
+![Screenshot 2025-11-28 at 11.17.14.png](destinationsoffers/Screenshot_2025-11-28_at_11.17.14.png)
 
 ## Добавление нового оффера
 
 ### 1. Нажимаем на + Destination
 
-![Screenshot 2025-11-28 at 11.19.50.png](Destinations(Offers)/Screenshot_2025-11-28_at_11.19.50.png)
+![Screenshot 2025-11-28 at 11.19.50.png](destinationsoffers/Screenshot_2025-11-28_at_11.19.50.png)
 
-### 2.  Выбираем метод By Advertiser
+### 2. Выбираем метод By Advertiser
 
-![Screenshot 2025-11-28 at 11.21.23.png](Destinations(Offers)/Screenshot_2025-11-28_at_11.21.23.png)
+![Screenshot 2025-11-28 at 11.21.23.png](destinationsoffers/Screenshot_2025-11-28_at_11.21.23.png)
 
 ### 3. Выбираем нужную нам партнёрскую сеть
 
-![Screenshot 2025-11-28 at 11.26.41.png](Destinations(Offers)/Screenshot_2025-11-28_at_11.26.41.png)
+![Screenshot 2025-11-28 at 11.26.41.png](destinationsoffers/Screenshot_2025-11-28_at_11.26.41.png)
 
 ### 4. Создаём оффер
 
 Заполняем поля:
-Name - полное название оффера 
+Name - полное название оффера
 
 redirectURL - ссылка на оффер(без Sub)
 
-![Screenshot 2025-11-28 at 11.28.06.png](Destinations(Offers)/Screenshot_2025-11-28_at_11.28.06.png)
+![Screenshot 2025-11-28 at 11.28.06.png](destinationsoffers/Screenshot_2025-11-28_at_11.28.06.png)
 
 ### 5. После добавление нового оффера обязательно даём досту на просмотр всем командам баеров, чтобы они могли видеть их в кампаниях. В противном случае они будут видеть вместо названия оффера - надпись Unkhown( на работоспособность оффера не влияет)
 
 # Advertiser
 
-Это наша основа под разных реклов. 
+Это наша основа под разных реклов.
 Каждый рекл имеет свою аббревиатуру, под которую пишется хвост сабок чтобы корректно передавались данные с преленда на рекла
 
-![Screenshot 2025-11-30 at 23.19.50.png](Destinations(Offers)/Screenshot_2025-11-30_at_23.19.50.png)
+![Screenshot 2025-11-30 at 23.19.50.png](destinationsoffers/Screenshot_2025-11-30_at_23.19.50.png)
 
 ### Добавление и редактирование шаблона через данное меню
 
-![Screenshot 2025-11-30 at 23.22.29.png](Destinations(Offers)/Screenshot_2025-11-30_at_23.22.29.png)
+![Screenshot 2025-11-30 at 23.22.29.png](destinationsoffers/Screenshot_2025-11-30_at_23.22.29.png)
 
 ## URL параметры разных шаблонов
 
@@ -110,9 +110,9 @@ aff_sub={source}& aff_sub2={{aio.visit.uuid}}&aff_sub5=FBpixelID&aff_unique1={{a
 {sub_id_23} == {{aio.visit.fields.price}}
 ```
 
-Просто заменяем все sub кейтаровские на параметры AIO 
+Просто заменяем все sub кейтаровские на параметры AIO
 
-Как пример, изменил Кейтаровские параметры оффера PP на параметры AIO: 
+Как пример, изменил Кейтаровские параметры оффера PP на параметры AIO:
 
 ```jsx
 sub1={subid}&sub2={buyer}&sub3={idpxl}&sub4={sub_id_13}&sub5={sub_id_14}&sub7={sub_id_19}&sub8={sub_id_16}&sub9={sub_id_15}&sub10={sub_id_18}&sub11={sub_id_17}&sub12={sub_id_21}&sub14={sub_id_22}
