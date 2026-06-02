@@ -20,7 +20,13 @@ extra_css:
   - css/extra.css
 
 markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
   - admonition
+  - pymdownx.details
   - pymdownx.superfences
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -41,6 +47,27 @@ nav:
       - Сетап в кейтаро без кло: keitaro/setup-no-clo.md
       - Создание сетапа под facebookEK (conversionApi): keitaro/setup-facebookek.md
       - Preland — скрипт для выделения всех ссылок и перехода на оффер: keitaro/preland-script.md
+      - New User: new-user.md
+  - AIO:
+      - Positions: aio/positions.md
+      - Access: aio/access.md
+      - Домены:
+          - Adding Domains: aio/adding-domains.md
+          - Domain Proxying: aio/domain-proxying.md
+          - Domain Recovery: aio/domain-recovery.md
+      - Buyer UTM: aio/buyer-utm.md
+      - Landing:
+          - Обзор: aio/landing/index.md
+          - Завести новый ленд: aio/landing/new-land.md
+          - Создание лендинга в AIO: aio/landing/create.md
+          - Перенос из Keitaro: aio/landing/migrate.md
+      - Fix Template: aio/fix-template.md
+      - WE DON'T USE IT NOW:
+          - Обзор: aio/we-dont-use/index.md
+          - Destinations (Offers): aio/we-dont-use/destinations.md
+          - Campaigns: aio/we-dont-use/campaigns.md
+          - CustomLink: aio/we-dont-use/customlink.md
+          - Adding Domains via AIO: aio/we-dont-use/adding-domains-aio.md
   - Серверные сетапы:
       - Hostinger + Palladium: server/Hostinger+Palladium.md
       - Прокидываем в клауд домены: server/CloudScript.md
