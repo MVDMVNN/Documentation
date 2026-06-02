@@ -2,12 +2,11 @@
 
 Таблица доступов
 
-| Team  | Spaceship    |                   | Cloudflare                                                                  |                  |
-| ----- | ------------ | ----------------- | --------------------------------------------------------------------------- | ---------------- |
-|       | Login        | Password          | Login                                                                       | Password         |
-| Kobe  | DirielDixon  | jLM@9Ssi2r\*b9!uu | [k0beblock.rifling684@slmails.com](mailto:k0beblock.rifling684@slmails.com) | l%Z82YdAM09p&&bM |
-| Trick | TrickyMaldro | AvzepSIJ3R\*QlX9B | [trickbox.spoof041@dralias.com](mailto:trickbox.spoof041@dralias.com)       | Tr!ck#8QZ_59A    |
-| Hui   | TrickyMaldro | AvzepSIJ3R\*QlX9B | [trickbox.spoof041@dralias.com](mailto:trickbox.spoof041@dralias.com)       | Tr!ck#8QZ_59A    |
+| Team  | Spaceship    |                   | Cloudflare                                                                  |                                                     |
+| ----- | ------------ | ----------------- | --------------------------------------------------------------------------- | --------------------------------------------------- |
+|       | Login        | Password          | Login                                                                       | Password                                            |
+| Kobe  | DirielDixon  | jLM@9Ssi2r\*b9!uu | [k0beblock.rifling684@slmails.com](mailto:k0beblock.rifling684@slmails.com) | <span class="copy-on-click">l%Z82YdAM09p&&bM</span> |
+| Trick | TrickyMaldro | AvzepSIJ3R\*QlX9B | [trickbox.spoof041@dralias.com](mailto:trickbox.spoof041@dralias.com)       | <span class="copy-on-click">Tr!ck#8QZ_59A</span>    |
 
 1. Домены закупаем на Spaceship как обычно. У каждой команды свой аккаунт и карта, в Payments Info можно увидеть актуальный баланс, при необходимости - пополнить.
 2. Далее [**проксируем**](domain-proxying.md) домены.

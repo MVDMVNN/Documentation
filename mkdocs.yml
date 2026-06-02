@@ -19,6 +19,9 @@ theme:
 extra_css:
   - css/extra.css
 
+extra_javascript:
+  - javascript/extra.js
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -49,24 +52,24 @@ nav:
       - Preland — скрипт для выделения всех ссылок и перехода на оффер: keitaro/preland-script.md
   - AIO:
       - Users:
-          - Обзор: aio/users/index.md
+          - Overview: aio/users/index.md
           - New User: aio/users/new-user.md
           - Buyer UTM: aio/users/buyer-utm.md
-          - Positions: aio/users/positions.md
-      - Домены:
-          - Обзор: aio/domains/index.md
+          - Change position: aio/users/positions.md
+      - Domains:
+          - Overview: aio/domains/index.md
           - Adding Domains: aio/domains/adding-domains.md
           - Domain Proxying: aio/domains/domain-proxying.md
           - Domain Recovery: aio/domains/domain-recovery.md
       - Landing:
-          - Обзор: aio/landing/index.md
-          - Завести новый ленд: aio/landing/new-land.md
-          - Создание лендинга в AIO: aio/landing/create.md
-          - Перенос из Keitaro: aio/landing/migrate.md
+          - Overview: aio/landing/index.md
+          - Adding new land: aio/landing/new-land.md
+          - New land creation: aio/landing/create.md
+          - Transfer land from Keitaro: aio/landing/migrate.md
       - Access: aio/access.md
       - Fix Template: aio/fix-template.md
       - WE DON'T USE IT NOW:
-          - Обзор: aio/we-dont-use/index.md
+          - Overview: aio/we-dont-use/index.md
           - Destinations (Offers): aio/we-dont-use/destinations.md
           - Campaigns: aio/we-dont-use/campaigns.md
           - CustomLink: aio/we-dont-use/customlink.md
