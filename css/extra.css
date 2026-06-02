@@ -5,3 +5,41 @@ body {
 .md-nav__title {
   display: none;
 }
+
+/* Заголовки секций — крупнее и ярче */
+.md-nav__title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--md-accent-fg-color) !important;
+  padding-top: 1rem;
+}
+
+/* Активная (открытая) статья */
+.md-nav__link--active {
+  color: var(--md-accent-fg-color) !important;
+  font-weight: 600;
+}
+
+/* Чуть больше отступ у вложенных пунктов */
+.md-nav__item .md-nav__item {
+  padding-left: 0.4rem;
+}
+
+/* Заголовки секций верхнего уровня */
+.md-nav--primary .md-nav__item--section > .md-nav__link {
+  color: #ff9800 !important; /* оранжевый */
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 1 !important;
+}
+
+/* Разделитель перед каждой секцией */
+.md-nav--primary .md-nav__item--section {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 0.6rem;
+  padding-top: 0.4rem;
+}
