@@ -1,4 +1,4 @@
-# Positions
+# Change Positions
 
 Наглядный пример по смене позиции с Buyer Helper на Buyer:
 
