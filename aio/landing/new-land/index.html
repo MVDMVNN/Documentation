@@ -1724,25 +1724,23 @@
 <li>Выносим стили и скрипт в отдельные файлы в папку ассеты</li>
 <li>Добавляем id к кнопке перехода с ленда на оффер:</li>
 </ol>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">id</span><span class="o">=</span><span class="s2">"p_modal_button3"</span>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"p_modal_button3"</span><span class="p">;</span>
 </span></code></pre></div>
-<ol>
-<li>Добавляем Hidden elements для конкретного ленда. Пример:</li>
-</ol>
+<p>Добавляем Hidden elements для конкретного ленда. Пример:</p>
 <div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Hidden</span><span class="w"> </span><span class="nx">elements</span><span class="w"> </span><span class="o">--&gt;</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="p">&lt;</span><span class="nt">span</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s">"brandName"</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="s">"display: none"</span><span class="p">&gt;</span><span class="nx">KIKO</span><span class="w"> </span><span class="nx">Milano</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p">&lt;</span><span class="nt">span</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s">"productName"</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="s">"display: none"</span><span class="p">&gt;</span><span class="nx">Kiko</span><span class="w"> </span><span class="nx">Milano</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="p">&lt;</span><span class="nt">img</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s">"productItemImage"</span><span class="w"> </span><span class="na">src</span><span class="o">=</span><span class="s">"./assets/1.png"</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="s">"display: none"</span><span class="w"> </span><span class="p">/&gt;</span>
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Hidden</span><span class="w"> </span><span class="nx">elements</span><span class="w"> </span><span class="nx">end</span><span class="w"> </span><span class="o">--&gt;</span>
 </span></code></pre></div>
-<ol>
-<li>Добавляем в конце файла макрос со скриптом:</li>
-</ol>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{{</span><span class="nx">aio</span><span class="o">:</span><span class="nx">macros</span><span class="o">:</span><span class="nx">passing_parameters</span><span class="p">}}</span>
+<p>Добавляем в конце файла макрос со скриптом:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="p">{</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nx">aio</span><span class="o">:</span><span class="w"> </span><span class="nx">macros</span><span class="o">:</span><span class="w"> </span><span class="nx">passing_parameters</span><span class="p">;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
 </span></code></pre></div>
-<ol>
-<li>Ленд готов, можно загружать по этой <strong>инструкции</strong></li>
-</ol>
+<p>Ленд готов, можно загружать по этой <a href="../create/">интрукции</a></p>
 
 
 
