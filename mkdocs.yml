@@ -68,7 +68,7 @@ nav:
           - Adding New land: aio/landing/new-land.md
           - New Land Creation: aio/landing/create.md
           - Transfer Land from Keitaro: aio/landing/migrate.md
-      - Access: aio/all-access.md
+      - All Access: aio/all-access.md
       - Fix Template: aio/fix-template.md
       - WE DON'T USE IT NOW:
           - Overview: aio/we-dont-use/index.md
