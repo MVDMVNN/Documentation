@@ -11,7 +11,7 @@ theme:
     primary: orange
     accent: cyan
   features:
-    # - navigation.tabs
+    - navigation.tabs
     - navigation.sections
     - search.highlight
     - content.code.copy
@@ -41,15 +41,6 @@ plugins:
 
 nav:
   - Главная: index.md
-  - Keitaro:
-      - Создание стандартного сетапа в кейтаро (Crypto): keitaro/standard-setup-crypto.md
-      - Отключение ключа кампании: keitaro/disable-campaign-key.md
-      - Создание оффера NCAPI: keitaro/offer-ncapi.md
-      - Адаптация оффера под Google: keitaro/offer-google.md
-      - Postback — отправка лида: keitaro/postback-lead.md
-      - Сетап в кейтаро без кло: keitaro/setup-no-clo.md
-      - Создание сетапа под facebookEK (conversionApi): keitaro/setup-facebookek.md
-      - Preland — скрипт для выделения всех ссылок и перехода на оффер: keitaro/preland-script.md
   - AIO:
       - Users:
           - Overview: aio/users/index.md
@@ -76,6 +67,15 @@ nav:
           - Campaigns: aio/we-dont-use/campaigns.md
           - CustomLink: aio/we-dont-use/customlink.md
           - Adding Domains via AIO: aio/we-dont-use/adding-domains-aio.md
+  - Keitaro:
+      - Создание стандартного сетапа в кейтаро (Crypto): keitaro/standard-setup-crypto.md
+      - Отключение ключа кампании: keitaro/disable-campaign-key.md
+      - Создание оффера NCAPI: keitaro/offer-ncapi.md
+      - Адаптация оффера под Google: keitaro/offer-google.md
+      - Postback — отправка лида: keitaro/postback-lead.md
+      - Сетап в кейтаро без кло: keitaro/setup-no-clo.md
+      - Создание сетапа под facebookEK (conversionApi): keitaro/setup-facebookek.md
+      - Preland — скрипт для выделения всех ссылок и перехода на оффер: keitaro/preland-script.md
   - Серверные сетапы:
       - Hostinger + Palladium: server/Hostinger+Palladium.md
       - Прокидываем в клауд домены: server/CloudScript.md

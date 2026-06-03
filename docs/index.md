@@ -12,7 +12,11 @@ cd Documentation // Переходим в папку с репозиторием
 pip3 install mkdocs-material // Установка самого MkDocs
 python3 -m mkdocs serve // Запуск локально
 
-python3 -m mkdocs gh-deploy --force //Пуш в репозиторий с автоматическим билдом
+Процесса билда и пуша изменений:
+1. python3 -m mkdocs gh-deploy --force //Пуш в репозиторий с автоматическим билдом
+2. git add .
+3. git commit -am "сообщение коммита"
+4. git push origin main
 ```
 
 ## Примеры важных обозначений
