@@ -7,10 +7,10 @@
 3. Добавляем id к кнопке перехода с ленда на оффер:
 
 ```jsx
-id="p_modal_button3"
+id = "p_modal_button3";
 ```
 
-1. Добавляем Hidden elements для конкретного ленда. Пример:
+Добавляем Hidden elements для конкретного ленда. Пример:
 
 ```jsx
 <!-- Hidden elements -->
@@ -20,10 +20,14 @@ id="p_modal_button3"
 <!-- Hidden elements end -->
 ```
 
-1. Добавляем в конце файла макрос со скриптом:
+Добавляем в конце файла макрос со скриптом:
 
 ```jsx
-{{aio:macros:passing_parameters}}
+{
+  {
+    aio: macros: passing_parameters;
+  }
+}
 ```
 
-1. Ленд готов, можно загружать по этой **инструкции**
+Ленд готов, можно загружать по этой [интрукции](create.md)

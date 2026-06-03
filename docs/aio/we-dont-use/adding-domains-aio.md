@@ -34,12 +34,6 @@ DNS Provider указываем всегда legionbfg@gmail.com
 
 ![image.png](adding-domains-via-the-aio-interface/image 4.png)
 
-[https://app.notion.com](https://app.notion.com)
-
-[https://app.notion.com](https://app.notion.com)
-
 Нажимаем кнопку “Confirm” и ожидаем, попутно добавляя домен в таблицу Setups [AIO]
 
 ![image.png](adding-domains-via-the-aio-interface/image 5.png)
-
-[https://app.notion.com](https://app.notion.com)
