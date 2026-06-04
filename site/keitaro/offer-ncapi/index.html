@@ -1914,7 +1914,9 @@
 <div class="admonition warning">
 <p class="admonition-title">Если в проекте есть quiz.js</p>
 </div>
-<p>Нужно брать отдельный скрипт с <code>window.userAnswers.toString()</code> вместо <code>generateQuizString(form)</code></p>
+<div class="admonition warning">
+<p class="admonition-title">В объекте <code>data</code> полю <code>quiz</code> нужно дать значение <code>window.userAnswers.toString()</code> вместо <code>generateQuizString(form)</code></p>
+</div>
 <p>Заменяем функции <code>getCountryCode()</code>, <code>submitForm()</code> и добавляем <code>createEventID()</code>:</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">getCountryCode</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>

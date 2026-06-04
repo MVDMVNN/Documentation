@@ -111,7 +111,7 @@ echo json_encode($response);
 ## js/script.js — добавление и редактирование функций
 
 !!! warning "Если в проекте есть quiz.js"
-Нужно брать отдельный скрипт с `window.userAnswers.toString()` вместо `generateQuizString(form)`
+!!! warning "В объекте `data` полю `quiz` нужно дать значение `window.userAnswers.toString()` вместо `generateQuizString(form)`"
 
 Заменяем функции `getCountryCode()`, `submitForm()` и добавляем `createEventID()`:
 
