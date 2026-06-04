@@ -1455,7 +1455,7 @@
   <a href="#4-jsscriptjs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. js/script.js — замена функций
+        4. js/script.js — добавление и редактирование функций
       
     </span>
   </a>
@@ -1785,7 +1785,7 @@
   <a href="#4-jsscriptjs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. js/script.js — замена функций
+        4. js/script.js — добавление и редактирование функций
       
     </span>
   </a>
@@ -1912,7 +1912,7 @@
 </span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="cm">&lt;!-- End Meta Pixel Code --&gt;</span>
 </span></code></pre></div>
-<h2 id="4-jsscriptjs">4. js/script.js — замена функций</h2>
+<h2 id="4-jsscriptjs">4. js/script.js — добавление и редактирование функций</h2>
 <div class="admonition warning">
 <p class="admonition-title">Если в проекте есть quiz.js</p>
 </div>
@@ -1938,6 +1938,27 @@
 <p>В объекте <code>data</code> внутри <code>submitForm</code> добавляем поля:</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">eventID</span><span class="o">:</span><span class="w"> </span><span class="nx">createEventID</span><span class="p">(),</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nx">city</span><span class="o">:</span><span class="w"> </span><span class="nx">city</span><span class="p">,</span>
+</span></code></pre></div>
+<p>В файле <code>index.html</code> нужно добавить скрытый <code>input</code> для получения метки баера. Вставлять код нужно сразу после открывающегося тэга <code>form</code>. Keitaro сам добавляет метку баера в макрос <code>{buyer}</code>.</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"hidden"</span> <span class="na">name</span><span class="o">=</span><span class="s">"buyerhrd"</span> <span class="na">value</span><span class="o">=</span><span class="s">"{buyer}"</span> <span class="p">/&gt;</span>
+</span></code></pre></div>
+<p>В объекте <code>data</code> нужно изменить поле <code>buyer</code> и добавить ему обработку скрытого инпута.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nx">buyer</span><span class="o">:</span><span class="w"> </span><span class="nx">getUrlParameter</span><span class="p">(</span><span class="s2">"buyer"</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">form</span><span class="p">.</span><span class="nx">elements</span><span class="p">.</span><span class="nx">buyerhrd</span><span class="o">?</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+</span></code></pre></div>
+<ol>
+<li>В папке <code>thanks</code> нужно добавить файл <code>js/trackerConversion.js</code> и подключить его в файл <code>thanks.html</code>. Добавлять в самый конец файла перед закрывающим тэгом <code>&lt;/body&gt;</code></li>
+</ol>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"js/trackerConversion.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Код для файла <code>trackerConversion.js</code>:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">cookie</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nb">RegExp</span><span class="p">(</span><span class="s2">"(?:^|; )"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">"subid"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">"=([^;]*)"</span><span class="p">));</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">subId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nx">matches</span><span class="p">[</span><span class="mf">1</span><span class="p">])</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kc">undefined</span><span class="p">;</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">pb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Image</span><span class="p">();</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="nx">pb</span><span class="p">.</span><span class="nx">src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"https://nanometer.work/0a62660/postback?subid="</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">subId</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">"&amp;status=lead"</span><span class="p">;</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span><span class="nx">pb</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"none"</span><span class="p">;</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">pb</span><span class="p">);</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="p">})();</span>
 </span></code></pre></div>
 
 
