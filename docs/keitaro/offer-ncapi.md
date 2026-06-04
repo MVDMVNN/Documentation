@@ -153,7 +153,7 @@ city: city,
 buyer: getUrlParameter("buyer") || form.elements.buyerhrd?.value || "",
 ```
 
-5. В папке `thanks` нужно добавить файл `js/trackerConversion.js` и подключить его в файл `thanks.html`. Добавлять в самый конец файла перед закрывающим тэгом `</body>`
+## 5. В папке `thanks` нужно добавить файл `js/trackerConversion.js` и подключить его в файл `thanks.html`. Добавлять в самый конец файла перед закрывающим тэгом `</body>`
 
 ```html
 <script src="js/trackerConversion.js"></script>
