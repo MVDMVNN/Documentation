@@ -61,9 +61,9 @@ if (isset($response['errors'])) {
 echo json_encode($response);
 ```
 
-3. Подключаем на страницу **thanks/index.php** код отправки лида в кейтаро и в фб
+## Подключение на страницу кода получения **idpxl** и отправки лида в фб
 
-### а) Начало файла thanks/index.php
+В самом начале файла thanks/index.php
 
 ```php
 <?php
@@ -72,7 +72,7 @@ echo json_encode($response);
 ?>
 ```
 
-### б) В теге `<head>` — отправка лида в фб
+В теге `<head>` — отправка лида в фб
 
 ```html
 <!-- Meta Pixel Code -->
@@ -108,7 +108,7 @@ echo json_encode($response);
 <!-- End Meta Pixel Code -->
 ```
 
-## 4. js/script.js — добавление и редактирование функций
+## js/script.js — добавление и редактирование функций
 
 !!! warning "Если в проекте есть quiz.js"
 Нужно брать отдельный скрипт с `window.userAnswers.toString()` вместо `generateQuizString(form)`
@@ -153,7 +153,9 @@ city: city,
 buyer: getUrlParameter("buyer") || form.elements.buyerhrd?.value || "",
 ```
 
-## 5. В папке `thanks` нужно добавить файл `js/trackerConversion.js` и подключить его в файл `thanks.html`. Добавлять в самый конец файла перед закрывающим тэгом `</body>`
+## Логика отправки лида в Keitaro
+
+В папке `thanks` нужно добавить файл `js/trackerConversion.js` и подключить его в файл `thanks.html`. Добавлять в самый конец файла перед закрывающим тэгом `</body>`
 
 ```html
 <script src="js/trackerConversion.js"></script>

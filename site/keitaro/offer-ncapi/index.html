@@ -1430,10 +1430,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#thanksindexphp" class="md-nav__link">
+  <a href="#idpxl" class="md-nav__link">
     <span class="md-ellipsis">
       
-        а) Начало файла thanks/index.php
+        Подключение на страницу кода получения idpxl и отправки лида в фб
       
     </span>
   </a>
@@ -1441,10 +1441,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#head" class="md-nav__link">
+  <a href="#jsscriptjs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        б) В теге &lt;head&gt; — отправка лида в фб
+        js/script.js — добавление и редактирование функций
       
     </span>
   </a>
@@ -1452,21 +1452,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-jsscriptjs" class="md-nav__link">
+  <a href="#keitaro" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. js/script.js — добавление и редактирование функций
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-thanks-jstrackerconversionjs-thankshtml-body" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. В папке thanks нужно добавить файл js/trackerConversion.js и подключить его в файл thanks.html. Добавлять в самый конец файла перед закрывающим тэгом &lt;/body&gt;
+        Логика отправки лида в Keitaro
       
     </span>
   </a>
@@ -1771,10 +1760,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#thanksindexphp" class="md-nav__link">
+  <a href="#idpxl" class="md-nav__link">
     <span class="md-ellipsis">
       
-        а) Начало файла thanks/index.php
+        Подключение на страницу кода получения idpxl и отправки лида в фб
       
     </span>
   </a>
@@ -1782,10 +1771,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#head" class="md-nav__link">
+  <a href="#jsscriptjs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        б) В теге &lt;head&gt; — отправка лида в фб
+        js/script.js — добавление и редактирование функций
       
     </span>
   </a>
@@ -1793,21 +1782,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-jsscriptjs" class="md-nav__link">
+  <a href="#keitaro" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. js/script.js — добавление и редактирование функций
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-thanks-jstrackerconversionjs-thankshtml-body" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. В папке thanks нужно добавить файл js/trackerConversion.js и подключить его в файл thanks.html. Добавлять в самый конец файла перед закрывающим тэгом &lt;/body&gt;
+        Логика отправки лида в Keitaro
       
     </span>
   </a>
@@ -1892,16 +1870,14 @@
 </span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>
 </span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="k">echo</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$response</span><span class="p">);</span>
 </span></code></pre></div>
-<ol>
-<li>Подключаем на страницу <strong>thanks/index.php</strong> код отправки лида в кейтаро и в фб</li>
-</ol>
-<h3 id="thanksindexphp">а) Начало файла thanks/index.php</h3>
+<h2 id="idpxl">Подключение на страницу кода получения <strong>idpxl</strong> и отправки лида в фб</h2>
+<p>В самом начале файла thanks/index.php</p>
 <div class="language-php highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">&lt;?php</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="nb">file_get_contents</span><span class="p">(</span><span class="s1">'https://nanometer.work/0a62660/postback?subid='</span> <span class="o">.</span> <span class="nv">$_COOKIE</span><span class="p">[</span><span class="s1">'subid'</span><span class="p">]</span> <span class="o">.</span> <span class="s1">'&amp;status=lead'</span><span class="p">);</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="nv">$pixel</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'idpxl'</span><span class="p">]</span> <span class="o">??</span> <span class="mi">1</span><span class="p">;</span>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="cp">?&gt;</span>
 </span></code></pre></div>
-<h3 id="head">б) В теге <code>&lt;head&gt;</code> — отправка лида в фб</h3>
+<p>В теге <code>&lt;head&gt;</code> — отправка лида в фб</p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cm">&lt;!-- Meta Pixel Code --&gt;</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">getUrlParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -1934,7 +1910,7 @@
 </span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="cm">&lt;!-- End Meta Pixel Code --&gt;</span>
 </span></code></pre></div>
-<h2 id="4-jsscriptjs">4. js/script.js — добавление и редактирование функций</h2>
+<h2 id="jsscriptjs">js/script.js — добавление и редактирование функций</h2>
 <div class="admonition warning">
 <p class="admonition-title">Если в проекте есть quiz.js</p>
 </div>
@@ -1967,7 +1943,8 @@
 <p>В объекте <code>data</code> нужно изменить поле <code>buyer</code> и добавить ему обработку скрытого инпута.</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nx">buyer</span><span class="o">:</span><span class="w"> </span><span class="nx">getUrlParameter</span><span class="p">(</span><span class="s2">"buyer"</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">form</span><span class="p">.</span><span class="nx">elements</span><span class="p">.</span><span class="nx">buyerhrd</span><span class="o">?</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
 </span></code></pre></div>
-<h2 id="5-thanks-jstrackerconversionjs-thankshtml-body">5. В папке <code>thanks</code> нужно добавить файл <code>js/trackerConversion.js</code> и подключить его в файл <code>thanks.html</code>. Добавлять в самый конец файла перед закрывающим тэгом <code>&lt;/body&gt;</code></h2>
+<h2 id="keitaro">Логика отправки лида в Keitaro</h2>
+<p>В папке <code>thanks</code> нужно добавить файл <code>js/trackerConversion.js</code> и подключить его в файл <code>thanks.html</code>. Добавлять в самый конец файла перед закрывающим тэгом <code>&lt;/body&gt;</code></p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"js/trackerConversion.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <p>Код для файла <code>trackerConversion.js</code>:</p>
