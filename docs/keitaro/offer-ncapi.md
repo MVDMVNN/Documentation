@@ -80,8 +80,7 @@ echo json_encode($response);
 В самом начале файла thanks/index.php
 
 ```php
-<?php й
-    file_get_contents('https://nanometer.work/0a62660/postback?subid=' . $_COOKIE['subid'] . '&status=lead');
+<?php
     $pixel = $_GET['idpxl'] ?? 1;
 ?>
 ```
@@ -202,7 +201,7 @@ const submitForm = async (event) => {
       lang: offerLang,
       ip: ip || "111.111.111.111",
       source: trafficSource,
-      buyer: getUrlParameter("buyer") || "",
+      buyer: getUrlParameter("buyer") || form.elements.buyerhrd?.value || "",
       target: getUrlParameter("target") || "",
       creo: getUrlParameter("creo") || "",
       idpxl: getUrlParameter("idpxl") || "",
