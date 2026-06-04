@@ -1,4 +1,4 @@
-# Servers
+# Servers Purchase and Configuration
 
 ### Покупка сервера
 

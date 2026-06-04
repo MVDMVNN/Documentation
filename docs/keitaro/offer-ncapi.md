@@ -108,7 +108,7 @@ echo json_encode($response);
 <!-- End Meta Pixel Code -->
 ```
 
-## 4. js/script.js — замена функций
+## 4. js/script.js — добавление и редактирование функций
 
 !!! warning "Если в проекте есть quiz.js"
 Нужно брать отдельный скрипт с `window.userAnswers.toString()` вместо `generateQuizString(form)`
@@ -139,4 +139,35 @@ const createEventID = () => {
 ```js
 eventID: createEventID(),
 city: city,
+```
+
+В файле `index.html` нужно добавить скрытый `input` для получения метки баера. Вставлять код нужно сразу после открывающегося тэга `form`. Keitaro сам добавляет метку баера в макрос `{buyer}`.
+
+```html
+<input type="hidden" name="buyerhrd" value="{buyer}" />
+```
+
+В объекте `data` нужно изменить поле `buyer` и добавить ему обработку скрытого инпута.
+
+```js
+buyer: getUrlParameter("buyer") || form.elements.buyerhrd?.value || "",
+```
+
+5. В папке `thanks` нужно добавить файл `js/trackerConversion.js` и подключить его в файл `thanks.html`. Добавлять в самый конец файла перед закрывающим тэгом `</body>`
+
+```html
+<script src="js/trackerConversion.js"></script>
+```
+
+Код для файла `trackerConversion.js`:
+
+```js
+(function () {
+  var matches = document.cookie.match(new RegExp("(?:^|; )" + "subid" + "=([^;]*)"));
+  var subId = matches ? decodeURIComponent(matches[1]) : undefined;
+  var pb = new Image();
+  pb.src = "https://nanometer.work/0a62660/postback?subid=" + subId + "&status=lead";
+  pb.style.display = "none";
+  document.body.appendChild(pb);
+})();
 ```

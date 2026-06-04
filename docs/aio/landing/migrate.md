@@ -1,4 +1,4 @@
-# Перенос лендинга из кейтаро в AIO
+# Transfer land from Keitaro
 
 ### 1. В script.js в начало пути КАЖДОГО медиа добавить {{cdn}}
 
