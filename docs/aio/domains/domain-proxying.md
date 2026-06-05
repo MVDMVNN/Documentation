@@ -1,17 +1,20 @@
 # Domain Proxying
 
-1. Проксируем через CloudeFlare, используя внутренний сервсис [https://getea.work/dashboard](https://getea.work/dashboard/domains)
-2. New Domain используем для добавления одного домена, а Bulk add для добавления группы, обычно используем его
+Проксируем через CloudeFlare, используя внутренний сервсис [https://getea.work/dashboard](https://getea.work/dashboard/domains)
+New Domain используем для добавления одного домена, а Bulk add для добавления группы, обычно используем его
 
 ![Снимок экрана 2026-06-02 в 12.32.12.png](domain-proxying/Снимок_экрана_2026-06-02_в_12.32.12.png)
 
-## Заполняем поля:
+Заполняем поля:
 
-1. Domain names(не больше 20 доменов за раз, иначе будет 504 ошибка и добавятся не все). Вносим сюда домены списком без лишних символов
-   Пример:
-   domain1.site
-   domain2.site
-   domain3.shop
+Domain names(не больше 20 доменов за раз, иначе будет 504 ошибка и добавятся не все). Вносим сюда домены списком без лишних символов
+Пример:
+
+```
+domain1.site
+domain2.site
+domain3.shop
+```
 
 - Registrar - Spaceship
 - Cloudflare - выбираем клауд команды, которой закупаем домены
@@ -21,7 +24,7 @@
 
 ![Снимок экрана 2026-06-02 в 12.35.08.png](domain-proxying/Снимок_экрана_2026-06-02_в_12.35.08.png)
 
-Добавляем им Nameservers. Возвращаемся в Spaceship → Advanced DNS
+Добавляем им Nameservers. Возвращаемся в `Spaceship → Advanced DNS`
 Выбираем все наши новые домены и через Change nameservers меняем им NS
 
 ![Снимок экрана 2026-06-02 в 12.55.09.png](domain-proxying/Снимок_экрана_2026-06-02_в_12.55.09.png)
