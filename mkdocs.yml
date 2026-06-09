@@ -45,11 +45,12 @@ nav:
       - Offers:
           - Adding new offer: aio-crypto/offers/new-offer.md
           - Offer adaptaion for AIO (google): aio-crypto/offers/offer-adapt-google.md
+          - Adding Buyer UTM for campaigns: aio/users/buyer-utm.md
   - AIO (Sweeps):
       - Users:
           - Overview: aio/users/index.md
           - New User: aio/users/new-user.md
-          - Buyer UTM: aio/users/buyer-utm.md
+          - Adding Buyer UTM for campaigns: aio/users/buyer-utm.md
           - Change position: aio/users/positions.md
       - Domains:
           - Overview: aio/domains/index.md
