@@ -46,6 +46,7 @@ nav:
           - Adding new offer: aio-crypto/offers/new-offer.md
           - Offer adaptaion for AIO (google): aio-crypto/offers/offer-adapt-google.md
           - Adding Buyer UTM for campaigns: aio/users/buyer-utm.md
+          - Creating new campaign: aio-crypto/campaigns/new-campaign.md
   - AIO (Sweeps):
       - Users:
           - Overview: aio/users/index.md
