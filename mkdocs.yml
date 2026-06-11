@@ -48,6 +48,8 @@ nav:
       - Campaigns: 
           - Creating new campaign: aio-crypto/campaigns/new-campaign.md
           - Adding Buyer UTM for campaigns: aio/users/buyer-utm.md
+      - Domains: 
+          - Domains initial path: aio-crypto/domains/domains-path.md
       - Flows: aio-crypto/flow/flow-explanation.md
   - AIO (Sweeps):
       - Users:
