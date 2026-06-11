@@ -124,7 +124,7 @@ echo json_encode($response);
 ## js/script.js — добавление и редактирование функций
 
 !!! warning "Если в проекте есть quiz.js"
-"В объекте `data` полю `quiz` нужно дать значение `window.userAnswers.toString()` вместо `generateQuizString(form)`"
+    В объекте `data` полю `quiz` нужно дать значение `window.userAnswers.toString()` вместо `generateQuizString(form)`
 
 Скрипт с получением кода страны, `createEventID` и `submitForm`
 

@@ -3,7 +3,7 @@
 ### 1. Скачиваем нужный оффер под Facebook
 
 !!! warning "Важно"
-Скачивать нужно обычный `[fb]` оффер, **не** `[conversion]`
+    Скачивать нужно обычный `[fb]` оффер, **не** `[conversion]`
 
 ### 2. Открываем код и меняем страницу спасибо **thanks/index.php**
 
@@ -53,34 +53,14 @@
 
 ### 3. В файле **js/script.js** меняем в двух местах:
 
-**а) Константы оффера** (почти в начале скрипта):
+**а) Константу `trafficSource` на google** (почти в начале скрипта):
 
 ```js
 const offerCountry = "kz";
 const offerName = "название__оффера";
-const trafficSource = "google";
-const ad = getUrlParameter("ad");
+=> const trafficSource = "google";
 const offerLang = "ru";
 ```
 
-**б) Логику редиректа при успешной отправке:**
-
-```js
-// Было:
-if (response.saved === "true") {
-  const redirectUrl = response.redirect_url || "none";
-  window.location.href = `thanks/?redirectUrl=${redirectUrl}`;
-  return;
-}
-
-// Стало:
-if (response.saved === "true") {
-  const redirectUrl = response.redirect_url || "none";
-  if (ad) {
-    window.location.href = `https://${ad}/thanks?idpxl=${data.idpxl}&clickId=${data.clickId}`;
-  } else {
-    window.location.href = `thanks?idpxl=${data.idpxl}&clickId=${data.clickId}`;
-  }
-  return;
-}
-```
+!!! warning "Важно"
+    Мы ушли от использования UTM-метки `ad` в сетапах, в будущем их не добавляем, а в старых при встрече с ними - удаляем.
