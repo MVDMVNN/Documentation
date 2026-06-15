@@ -45,6 +45,9 @@ nav:
       - Offers:
           - Adding new offer: aio-crypto/offers/new-offer.md
           - Offer adaptaion for AIO (google): aio-crypto/offers/offer-adapt-google.md
+      - Whites:
+          - Adding new white: aio-crypto/whites/new-white.md
+          - White adaptation for AIO: aio-crypto/whites/white-adapt.md
       - Campaigns: 
           - Creating new campaign: aio-crypto/campaigns/new-campaign.md
           - Adding Buyer UTM for campaigns: aio/users/buyer-utm.md
