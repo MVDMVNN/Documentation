@@ -2,7 +2,8 @@ body {
   font-weight: 600;
 }
 
-.md-nav__title {
+/* Скрываем дублирующий заголовок раздела в сайдбаре */
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
   display: none;
 }
 
@@ -42,6 +43,51 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 0.6rem;
   padding-top: 0.4rem;
+}
+
+/* Заголовки страниц */
+.md-content h1 {
+  color: var(--md-accent-fg-color);
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  border-bottom: 2px solid var(--md-accent-fg-color);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.md-content h2,
+.md-content h3,
+.md-content h4,
+.md-content h5,
+.md-content h6 {
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+  border-left: 4px solid var(--md-accent-fg-color);
+  padding-left: 0.65rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.md-content h2 { font-size: 1.25rem; }
+.md-content h3 { font-size: 1.05rem; }
+.md-content h4 { font-size: 0.95rem; }
+.md-content h5,
+.md-content h6 { font-size: 0.85rem; }
+
+/* Ссылки в контенте */
+.md-content a {
+  color: var(--md-accent-fg-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.md-content a:hover {
+  color: var(--md-primary-fg-color);
+}
+
+.md-content a:hover {
+  color: var(--md-primary-fg-color);
 }
 
 .copy-on-click {
