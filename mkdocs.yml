@@ -50,7 +50,7 @@ nav:
           - White adaptation for AIO: aio-crypto/whites/white-adapt.md
       - Campaigns: 
           - Creating new campaign: aio-crypto/campaigns/new-campaign.md
-          - How to change and check cloack: aio/campaigns/how-to-change-cloack.md
+          - How to change and check cloack: aio-crypto/campaigns/how-to-change-cloack.md
           - Adding Buyer UTM for campaigns: aio/users/buyer-utm.md
       - Domains: 
           - Domains initial path: aio-crypto/domains/domains-path.md
