@@ -44,7 +44,8 @@ nav:
   - AIO (Crypto):
       - Offers:
           - Adding new offer: aio-crypto/offers/new-offer.md
-          - Offer adaptaion for AIO (google): aio-crypto/offers/offer-adapt-google.md
+          - Offer adaptaion for AIO: aio-crypto/offers/offer-adapt.md
+          - Offer adaptaion for AIO (no quiz): aio-crypto/offers/offer-adapt-no-quiz.md
       - Whites:
           - Adding new white: aio-crypto/whites/new-white.md
           - White adaptation for AIO: aio-crypto/whites/white-adapt.md
