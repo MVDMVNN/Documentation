@@ -637,6 +637,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#aio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Добавление макросов скриптов + AIO
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2483,6 +2494,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#aio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Добавление макросов скриптов + AIO
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2617,7 +2639,7 @@
 </span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>6. Размещай перенесённый блок (#thanks-section) за пределами <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span> (например, сразу после <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>, перед <span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">"bottom-bar"</span><span class="p">&gt;</span>), а не внутри него как дополнительный прямой потомок. На лендинге квиз генерируется JS-макросом билдера ({{aio:macros:quiz_logic}} и т.п.), который может опираться на количество/порядок прямых дочерних элементов <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span> — лишний потомок внутри <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span> способен незаметно (без ошибок в консоли) сломать рендер радиокнопок ответов квиза.
 </span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>7. После изменений проверь, что верстка и стили остальных секций (особенно квиз и кнопки ответов) не сломались — как из-за глобальных CSS-правил (*, :root) в переносимом файле, которые могут затронуть всю страницу, так и из-за изменения структуры DOM внутри <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>.
 </span></code></pre></div>
-<p><br></p>
+<h3 id="aio">Добавление макросов скриптов + AIO</h3>
 <p>Следующим шагом будет добавление ещё парочки макросов, уже в самый конец файла, перед закрывающим тэгом <code>&lt;/body&gt;</code></p>
 <div class="admonition warning">
 <p class="admonition-title"> Макрос quiz_logic</p>
