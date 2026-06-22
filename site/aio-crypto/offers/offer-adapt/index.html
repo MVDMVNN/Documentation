@@ -521,6 +521,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Offer adaptaion for AIO
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -537,6 +555,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Тэг
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Тэг
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Форма отправки лида
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#js" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JS часть оффера
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Удаление лишних файлов
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thanks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Страница thanks
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2308,6 +2411,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Тэг
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Тэг
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Форма отправки лида
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#js" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JS часть оффера
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Удаление лишних файлов
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thanks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Страница thanks
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2326,8 +2503,9 @@
 <h1 id="offer-adaptaion-for-aio">Offer adaptaion for AIO</h1>
 <div class="admonition note">
 <p class="admonition-title">Моментик</p>
-<p>Все оффера должны делаться на основании "современной" версии оффера, к примеру оффер из Keitaro [386] и [404] KZ ru Kaspi AI-QCHi</p>
+<p>Все оффера должны делаться на основании "современной" версии оффера, к примеру оффер из Keitaro [386] и [404] KZ ru Kaspi AI-QCHi.</p>
 </div>
+<h3 id="_1">Тэг </h3>
 <p>Адаптация пойдёт сверху-вниз. Для начала нужно добавить в тэг <code>&lt;head&gt;</code>, перед самым его закрывающим тэгом <code>&lt;/head&gt;</code> два макроса</p>
 <div class="admonition info">
 <p class="admonition-title">Оффер без квиза</p>
@@ -2344,7 +2522,7 @@
 <p class="admonition-title">Макрос <code>{{aio:macros:aio_gtag}}</code></p>
 <p>Это тоже макрос AIO, который отвечает за добавление google tag manager и отправку Page View гуглу</p>
 </div>
-<p><br></p>
+<h3 id="_2">Тэг </h3>
 <p>Сразу после открывающего тэга <code>&lt;body&gt;</code> нужно добавить макрос</p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{{aio:macros:offer_form}}
 </span></code></pre></div>
@@ -2352,21 +2530,24 @@
 <p class="admonition-title">Макрос <code>{{aio:macros:offer_form}}</code></p>
 <p>Это кастомный макрос, в котором прописаны стили для input формы отправки лида и стиль для враппера самого инпута</p>
 </div>
-<p><br></p>
+<h3 id="_3">Форма отправки лида</h3>
 <p>Далее, опускаемся к форме отправки лида и нужно по аналогии назвать каждый инпут правильным <code>name</code></p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>input Имя - name="first_name"
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>input Фамилия - name="last_name"
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>input Телефон - name="phone"
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>Перед кнопкой отправки формы нужно добавить новый скрытый инпут:
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">"quizInput"</span> <span class="na">type</span><span class="o">=</span><span class="s">"hidden"</span> <span class="na">name</span><span class="o">=</span><span class="s">"quiz_data"</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>!!! warning "Инпут телефона"
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    Инпут с телефоном обязательно должен иметь `type="tel"`, иначе движок AIO не распознает этот инпут и не навесит туда фильтрационную библиотеку.
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>Перед кнопкой отправки формы нужно добавить новый скрытый инпут:
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">"quizInput"</span> <span class="na">type</span><span class="o">=</span><span class="s">"hidden"</span> <span class="na">name</span><span class="o">=</span><span class="s">"quiz_data"</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Для чего нужен скрытый инпут</p>
 <p>Скрытый инпут был добавлен для того, чтобы скрипт собирал в него все ответы пользователя, а потом AIO сам брал <code>value</code> из этого инпута и отправлял с лидом в нашу CRM</p>
 </div>
-<p><br></p>
-<p>Следующим шагом, нужно спустить к JS коде страницы и перенести часть кода из файла <code>quiz.js</code> в <code>index.html</code>. А именно, объявление массива объектов <code>questions</code>, а так же добавить новую константу <code>aioCdn</code>.</p>
+<h3 id="js">JS часть оффера</h3>
+<p>Следующим шагом, нужно спустить к JS коде страницы и перенести часть кода из файла <code>quiz.js</code> в <code>index.html</code>. А именно, объявление массива объектов <code>questions</code>, в котором хранятся: описание вопроса, ответы и картинка.</p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">aioCdn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"{{cdn}}"</span><span class="p">;</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
@@ -2412,15 +2593,46 @@
 <p class="admonition-title">Зачем макрос <code>{{cdn}}</code> перед каждым изображением в массиве</p>
 <p>Этот макрос нужно добавлять для того, чтобы картинки тоже подгружались абсолютным путём к конкретной папке. AIO сам подставит сюда нужный абсолютный путь во время загрузки в трекер.</p>
 </div>
+<h3 id="_4">Удаление лишних файлов</h3>
+<p>После того, как мы добавим новый код, далее, нужно удалить абсолютно все <code>.js</code> файлы в конце страницы, файл <code>send.php</code>.</p>
+<h3 id="thanks">Страница thanks</h3>
+<p>По сути, нужно закинуть папку с оффером в <code>Cursor</code> и прописать ему один промпт, который переносит содержимое страницы спасибо в конец файла <code>index.html</code>, переносит <code>thanks.css</code> в <code>offer-assets/css</code>, а так же логику работы таймера, который будет запускаться только при покаже страницы спасибо после всех этапов.</p>
+<p>Страница теперь работает так, что мы проходим квиз, потом заполняем форму, а затем отправляем лид. Когда лид успешно улетел, блок с формой отправки лида и лоадер скрываются и отображается блок с контектом страницы спасибо, а так же запуская таймер.</p>
+<p>Код промпта приведён ниже:</p>
+<div class="admonition info">
+<p class="admonition-title">Скопировать</p>
+<p>Скопировать весь текст можно скопировать нажав на иконку слева сверху блока с текстом</p>
+</div>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>У меня есть страница-«спасибо» (thanks.html) и основной лендинг (index.html). Перенеси HTML, CSS-подключение и JS-логику со страницы thanks.html в index.html, но не показывай этот блок сразу:
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>1. Подключи нужный CSS-файл (например, thanks.css) в <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span> index.html.
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>2. Перенеси HTML-разметку блока в index.html, обернув её в контейнер с уникальным id (например, #thanks-section) и style="display: none".
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>3. В переносимом thanks.css найди стили, которые в исходном thanks.html были заданы для тега <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span> (отступы, layout и т.п.), и перенеси их в новый класс .container-wrapper. Добавь этот класс на тот же div, что несёт id="thanks-section" (то есть у блока будет id="thanks-section" class="container-wrapper"), чтобы стили продолжали применяться без конфликта с остальной верстой основного лендинга.
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>4. Перенеси связанный JS (таймеры, счётчики и т.п.) в отдельный <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"> </span><span class="nx">в</span><span class="w"> </span><span class="nx">конце</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">body</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="nx">переименовав</span><span class="w"> </span><span class="nx">все</span><span class="w"> </span><span class="nx">функции</span><span class="w"> </span><span class="nx">и</span><span class="w"> </span><span class="nx">переменные</span><span class="w"> </span><span class="nx">с</span><span class="w"> </span><span class="nx">уникальным</span><span class="w"> </span><span class="nx">префиксом</span><span class="w"> </span><span class="p">(</span><span class="nx">например</span><span class="p">,</span><span class="w"> </span><span class="nx">thanks</span><span class="o">*</span><span class="p">),</span><span class="w"> </span><span class="nx">чтобы</span><span class="w"> </span><span class="nx">не</span><span class="w"> </span><span class="nx">конфликтовали</span><span class="w"> </span><span class="nx">с</span><span class="w"> </span><span class="nx">остальным</span><span class="w"> </span><span class="nx">JS</span><span class="w"> </span><span class="nx">на</span><span class="w"> </span><span class="nx">странице</span><span class="p">.</span><span class="w"> </span><span class="nx">Это</span><span class="w"> </span><span class="nx">касается</span><span class="w"> </span><span class="nx">и</span><span class="w"> </span><span class="nx">ключей</span><span class="w"> </span><span class="nx">localStorage</span><span class="p">.</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>   Важно: в конце <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span> index.html есть строки-плейсхолдеры вида {{aio:macros:...}} и {{aio}} — это шаблонные вставки билд-системы, и они должны оставаться самой последней конструкцией перед <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>, в исходном порядке и без изменений. Новый <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"> </span><span class="nx">нужно</span><span class="w"> </span><span class="nx">вставить</span><span class="w"> </span><span class="nx">перед</span><span class="w"> </span><span class="nx">этими</span><span class="w"> </span><span class="nx">плейсхолдерами</span><span class="p">,</span><span class="w"> </span><span class="nx">а</span><span class="w"> </span><span class="nx">не</span><span class="w"> </span><span class="nx">после</span><span class="w"> </span><span class="nx">них</span><span class="p">.</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>5. Не запускай логику автоматически — оберни запуск в функцию-триггер (например, showThanksSection()), которая:
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>   - скрывает предыдущий блок лендинга (например, секцию с классом final-form, через style.display = "none"),
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>   - показывает перенесённый блок (style.display = "block"),
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>   - запускает таймер/логику только в этот момент.
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>   Саму функцию-триггер не вызывай — я вызову её сам в нужном месте, когда добавлю логику показа.
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>6. Размещай перенесённый блок (#thanks-section) за пределами <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span> (например, сразу после <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>, перед <span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">"bottom-bar"</span><span class="p">&gt;</span>), а не внутри него как дополнительный прямой потомок. На лендинге квиз генерируется JS-макросом билдера ({{aio:macros:quiz_logic}} и т.п.), который может опираться на количество/порядок прямых дочерних элементов <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span> — лишний потомок внутри <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span> способен незаметно (без ошибок в консоли) сломать рендер радиокнопок ответов квиза.
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>7. После изменений проверь, что верстка и стили остальных секций (особенно квиз и кнопки ответов) не сломались — как из-за глобальных CSS-правил (*, :root) в переносимом файле, которые могут затронуть всю страницу, так и из-за изменения структуры DOM внутри <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>.
+</span></code></pre></div>
 <p><br></p>
-<p>После того, как мы добавим новый код, далее, нужно удалить абсолютно все <code>.js</code> файлы в конце страницы, файл <code>send.php</code>. Из папки <code>thanks</code> мы переносим файл <code>index.html/index.php/thanks.html</code> в корень папки, а <code>.css</code> файл со стилями в <code>offer-assets</code> и прописываем новый путь в <code>thanks.html</code>.</p>
-<p>Так же, в файле <code>thanks.html</code> нужно удалить все скрипты оптравки лидов и подключения <code>.js</code> файлов.</p>
-<p>Мы ничего из этого более не используем, всё делается силами AIO и под его капотом.</p>
-<p><br></p>
-<p>Финальным шагом будет добавление ещё парочки макросов, уже в самый конец файла, перед закрывающим тэгом <code>&lt;/body&gt;</code></p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>{{aio:macros:aio_nonsdk_form_handler}} 
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>{{aio:macros:quiz_logic}} 
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>{{aio:macros:offer_links_version_increment}}
+<p>Следующим шагом будет добавление ещё парочки макросов, уже в самый конец файла, перед закрывающим тэгом <code>&lt;/body&gt;</code></p>
+<div class="admonition warning">
+<p class="admonition-title"> Макрос quiz_logic</p>
+<p>Этот макрос оброс условиями и дополнениями, поэтому нужно пояснить то, как выбрать правильный макрос для работы логики квиза</p>
+</div>
+<p>Сейчас у нас существует 3 вида этого макроса:</p>
+<ol>
+<li><code>quiz_logic</code> - это самый обычный и стандартный вид скрипта. Он нужен для стандартных офферов с квизом, который представляет из себя вопросы в виде обычных кнопок, запись данных в <code>quiz_data</code> инпут.</li>
+<li><code>quiz_logic_filter</code> - это вид скрипта, который работает как квиз, но тут есть доп. <em>оценка</em> ответов, если 1 или несколько ответов оказались <em>неверными</em>, то вместо формы регистрации будет отображаться страница с описанием, что пользователь лох позорный. Остальная логика работает как обычно. </li>
+<li><code>quiz_with_subtitle_and_radio_button</code> - это вид скрипта, который работает как обычный квиз, но тут варианты ответов являются не кнопками, а <code>radio-buttons</code>, а вопросы являются не полями объекта в массиве <code>quiestions</code>, а на самих картинках вопроса, есть только <code>answerTitle</code>, который будет отображаться в CRM перед ответом.</li>
+<li><code>quiz_trade_logic</code> - это вид скрипта, который сделан под определённые оффера на тематику трейдинга от команды RED. Сделан он потому, что там скрипт изначально сделан слишком отличающимся от стандартного, поэтому его оптимизация была не целесообразна и вынесена в отдельный макрос.</li>
+</ol>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>  {{aio:macros:aio_nonsdk_form_handler}} 
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  {{aio:macros:quiz_logic}} 
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  {{aio:macros:offer_links_version_increment}}
 </span></code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Что делает макрос <code>{{aio:macros:aio_nonsdk_form_handler}}</code> </p>
